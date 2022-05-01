@@ -1,2 +1,2 @@
-# Modern Java - SpringOne
+# Modern Java - jFokus
 
