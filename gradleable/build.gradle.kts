@@ -1,9 +1,6 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
     application
     kotlin("jvm") version "1.6.21"
-    scala
 }
 
 java {
@@ -18,12 +15,8 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    implementation("org.scala-lang:scala3-library_3:3.1.2")
     implementation("net.bytebuddy:byte-buddy:1.10.8")
     implementation("net.bytebuddy:byte-buddy-agent:1.10.8")
-    implementation("dev.optics:monocle-core_3:3.1.0")
-    implementation("dev.optics:monocle-unsafe_3:3.1.0")
-    implementation("dev.optics:monocle-macro_3:3.1.0")
 }
 
 tasks.withType<JavaCompile> {
